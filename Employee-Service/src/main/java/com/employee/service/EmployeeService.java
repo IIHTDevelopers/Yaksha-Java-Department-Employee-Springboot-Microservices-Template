@@ -16,21 +16,15 @@ public class EmployeeService {
 	private EmployeeRepository employeeRepository;
 
 	public Employee createEmployee(Employee employee) {
-		return employeeRepository.save(employee);
+		return null;
 	}
 
 	public Optional<Employee> getEmployee(Long id) {
-		return employeeRepository.findById(id);
+		return null;
 	}
 
 	public Employee updateEmployee(Long id, Employee updatedEmployee) {
-		Employee emp = employeeRepository.findById(id)
-				.orElseThrow(() -> new NotFoundException("Employee with id " + id + " not found"));
-
-		emp.setName(updatedEmployee.getName());
-		emp.setEmail(updatedEmployee.getEmail());
-		emp.setPosition(updatedEmployee.getPosition());
-
-		return employeeRepository.save(emp);
+		return null;
 	}
 }
+
