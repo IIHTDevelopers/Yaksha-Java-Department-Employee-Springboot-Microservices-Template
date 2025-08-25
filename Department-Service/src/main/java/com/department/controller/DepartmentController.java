@@ -32,8 +32,8 @@ public class DepartmentController {
 	}
 
 	@PutMapping("/{id}")
-	public ResponseEntity<Department> updateDepartment(@PathVariable Long id, @RequestBody Department dept) {
-		Department updated = departmentService.update(id, dept);
+	public ResponseEntity<Department> updateDepartment(@PathVariable Long id, @RequestBody Department dept) {		
 		return null;
 	}
+
 }
